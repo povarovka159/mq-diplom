@@ -136,6 +136,7 @@ a {
   font-size: 14px;
   font-weight: 400;
   display: inline-block;
+  background: #f3f7f6;
 }
 
 .select-description {
@@ -215,11 +216,11 @@ a {
   width: 100%;
   resize: none;
   border: none;
-  padding: 20px;
+  padding: 18px;
   box-sizing: border-box;
   font-size: 14px;
   font-weight: 400;
-  background: #e9e9ed;
+  background: #f3f7f6;
   max-height: 130px;
 }
 
@@ -453,8 +454,11 @@ a {
 
 .post_pic {
   display: block;
-  width: 380px;
+  min-width: 380px;
+  background: #d3d5d5;
+  max-height: 295px;
 }
+
 
 .post-content {
   margin-left: 30px;
@@ -466,6 +470,7 @@ a {
   color: #b59f5b;
   text-transform: uppercase;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 15px;
 }
 
@@ -857,6 +862,16 @@ a {
   background-image: url("../svg/003-tumblr.svg");
 }
 
+.copyright {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 43px;
+  width: 220px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #999999;
+}
+
 @media only screen and (max-width: 1200px) {
   .nav {
     display: none;
@@ -973,6 +988,10 @@ a {
     margin-top: 4px;
   }
 
+  .post_pic {
+    min-width: 100%;
+  }
+
   .main-conteiner {
     width: 55%;
   }
@@ -1031,13 +1050,6 @@ a {
 
   .section-top-article-content {
     padding: 13px;
-  }
-
-  .category-list {
-    font-size: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
   }
 
   .section-top-article:nth-child(3n + 3),
